@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Sr2-bi-QIE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="59k-nZ-psa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tez-fh-I03"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA3-II-tp9">
+                                <rect key="frame" x="111" y="240" width="218" height="30"/>
+                                <state key="normal" title="Movie"/>
+                                <connections>
+                                    <segue destination="mgg-pM-ZQm" kind="modal" modalPresentationStyle="fullScreen" id="Skw-Zk-3lZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yA3-II-tp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="111" id="09j-Ig-ntw"/>
+                            <constraint firstItem="yA3-II-tp9" firstAttribute="top" secondItem="59k-nZ-psa" secondAttribute="bottom" constant="152" id="exs-9k-ZAj"/>
+                            <constraint firstAttribute="trailing" secondItem="yA3-II-tp9" secondAttribute="trailing" constant="85" id="w0o-Qu-VTp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Km-nq-Nzi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="180"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Uz-AP-EX6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sr2-bi-QIE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jn4-1B-rUi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q22-Xt-RLv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cb-cD-reA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97.000000000000014" y="180"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Ebf-Pw-EQb">
+            <objects>
+                <viewController id="mgg-pM-ZQm" customClass="LoginViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UYQ-mP-hk4"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ng-VD-eO8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nD3-GZ-KRf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1To-aV-ETa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bk7-4z-gPY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="179"/>
+        </scene>
+    </scenes>
+</document>

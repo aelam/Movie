@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.9.1)
+  - KeyboardMan (1.2.3)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SDWebImage (5.4.1):
+    - SDWebImage/Core (= 5.4.1)
+  - SDWebImage/Core (5.4.1)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeyboardMan
+  - RxCocoa
+  - SDWebImage
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeyboardMan
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  KeyboardMan: b51e3209d41ff56f65459c9cf734a5f8c5443783
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SDWebImage: 29c340dbdcef342bb13125553f4e19ce056b07a7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 600cdf32fb9a203afcc8cc7a36bf53e540ba5499
+
+COCOAPODS: 1.8.4
